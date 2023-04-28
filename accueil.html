@@ -1,150 +1,117 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Accueil</title>
-    <link rel="stylesheet" href="node_modules/bulma/css/bulma.min.css" />
-  </head>
-  <body>
-    <header>
-      <nav
-        class="navbar is-fixed-top"
-        role="navigation"
-        aria-label="main navigation"
-      >
-        <div class="navbar-brand">
-          <a class="navbar-item" href="#">
-            <img src="image/bulles.png" />
-          </a>
 
-          <a
-            role="button"
-            class="navbar-burger"
-            aria-label="menu"
-            aria-expanded="false"
-            data-target="navbarBasicExample"
-          >
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-          </a>
-        </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Accueil</title>
+  <link rel="stylesheet" href="node_modules/bulma/css/bulma.min.css" />
+</head>
 
-        <div id="navbarBasicExample" class="navbar-menu">
-          <div class="navbar-start">
-            <a class="navbar-item" href="accueil.html"> Accueil </a>
+<body>
+  <header>
+    <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="#">
+          <img src="image/bulles.png" alt="logo du site" />
+        </a>
 
-            <a class="navbar-item" href="produits.html"> Produits </a>
-
-            <div class="navbar-item has-dropdown is-hoverable">
-              <a class="navbar-link"> Plus </a>
-
-              <div class="navbar-dropdown">
-                <a class="navbar-item" href="panier.html"> Panier </a>
-                <a class="navbar-item" href="Compte.html"> Mon Compte</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="navbar-end">
-            <div class="navbar-item">
-              <div class="buttons">
-                <a class="button is-info">
-                  <strong>Inscription</strong>
-                </a>
-                <a class="button is-light"> Connexion </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </nav>
-    </header>
-    <div class="is-transparent">////</div>
-    <main class="mt-6 mx-5">
-      <section>
-        <h2 class="title ml-2 is-underlined">Actualités :</h2>
-        <div class="columns is-vcentered">
-          <button
-            class="button is-info column pt-6 pb-6 is-fullwidth"
-            onclick="plusDivs(-1)"
-          >
-            &#10094;
-          </button>
-          <div class="column is-four-fifths">
-            <img
-              class="mySlides"
-              src="image/Alex-Ross-Wallpaper-Download-HD-Free.jpg"
-              style="width: 100%"
-            />
-            <img
-              class="mySlides"
-              src="image/Free-Download-Alex-Ross-Wallpaper.jpg"
-              style="width: 100%"
-            />
-            <img class="mySlides" src="image/671029.jpg" style="width: 100%" />
-          </div>
-          <button class="button is-info column pt-6 pb-6 is-fullwidth" onclick="plusDivs(1)">
-            &#10095;
-          </button>
-        </div>
-      </section>
-      <section>
-        <h2 class="title ml-2 is-underlined mt-5">Produits populaires :</h2>
-        <div class="columns">
-          <a href="produit.html" class="column"
-            ><img src="image/house-of-x-powers-of-x-deluxe.jpg" alt=""
-          /></a>
-          <a href="" class="column"
-            ><img src="image/nightwing-infinite-tome-1.jpg" alt=""
-          /></a>
-          <a href="" class="column"
-            ><img
-              src="image/punisher-max-par-ennis-robertson-tome-1.jpg"
-              alt=""
-          /></a>
-          <a href="" class="column"
-            ><img src="image/miracleman-omnibus.jpg" alt=""
-          /></a>
-          <a href="" class="column"
-            ><img src="image/sandman-tome-1.jpg" alt=""
-          /></a>
-        </div>
-        <a href="" class="button is-info is-pulled-right"
-          >Voir tous les produits >>>></a
-        >
-      </section>
-      <section>
-        <h2 class="title ml-2 is-underlined mt-6">Qui Sommes nous ? :</h2>
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo
-          expedita saepe cupiditate quo, ea assumenda omnis quaerat itaque non
-          natus ut doloremque tempore, nulla quibusdam asperiores nostrum
-          temporibus iure! Id?Lorem, ipsum dolor sit amet consectetur
-          adipisicing elit. Fuga, eius id animi nam perferendis veniam, harum
-          consequuntur ipsum quisquam rem saepe atque cupiditate accusamus amet
-          deserunt ex ipsam delectus reiciendis?Lorem ipsum dolor sit amet,
-          consectetur adipisicing elit. Totam quasi, aliquam expedita, mollitia,
-          impedit consequatur fuga eum sint debitis assumenda tempora et! Quos
-          molestias commodi id consequatur repellendus iusto. Pariatur.
-        </p>
-      </section>
-    </main>
-    <footer class="mt-4 mx-5 has-text-centered is-hidden-touch">
-      <div class="columns is-vcentered">
-        <p class="column is-one-fifth">Suivez nous sur :</p>
-        <a href="" class="column is-one-fifth"
-          ><img src="image/facebook.png" alt=""
-        /></a>
-        <a href="" class="column is-one-fifth"
-          ><img src="image/twitter.png" alt=""
-        /></a>
-        <a href="" class="column is-one-fifth"
-          ><img src="image/instagram.png" alt=""
-        /></a>
+        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
       </div>
-    </footer>
-    <script src="JS/script.js"></script>
-  </body>
+
+      <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-start">
+          <a class="navbar-item" href="accueil.html"> Accueil </a>
+
+          <a class="navbar-item" href="produits.html"> Produits </a>
+
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link"> Plus </a>
+
+            <div class="navbar-dropdown">
+              <a class="navbar-item" href="panier.html"> Panier </a>
+              <a class="navbar-item" href="Compte.html"> Mon Compte</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="navbar-end">
+          <div class="navbar-item">
+            <div class="buttons">
+              <a class="button is-info" href="inscription.html">
+                <strong>Inscription</strong>
+              </a>
+              <a class="button is-light" href="connexion.html"> Connexion </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <div class="is-transparent">////</div>
+  <main class="mt-6 mx-5">
+    <section>
+      <h2 class="title ml-2 is-underlined">Actualités :</h2>
+      <div class="columns is-vcentered">
+        <button class="button is-info column pt-6 pb-6 is-fullwidth" onclick="plusDivs(-1)">
+          &#10094;
+        </button>
+        <div class="column is-four-fifths">
+          <img class="mySlides" src="image/Alex-Ross-Wallpaper-Download-HD-Free.jpg" style="width: 100%"
+            alt="couverture de livre" />
+          <img class="mySlides" src="image/Free-Download-Alex-Ross-Wallpaper.jpg" style="width: 100%"
+            alt="couverture de livre" />
+          <img class="mySlides" src="image/671029.jpg" style="width: 100%" alt="couverture de livre" />
+        </div>
+        <button class="button is-info column pt-6 pb-6 is-fullwidth" onclick="plusDivs(1)">
+          &#10095;
+        </button>
+      </div>
+    </section>
+    <section>
+      <h2 class="title ml-2 is-underlined mt-5">Produits populaires :</h2>
+      <div class="columns">
+        <a href="produit.html" class="column"><img src="image/house-of-x-powers-of-x-deluxe.jpg"
+            alt="couverture de livre" /></a>
+        <a href="produit.html" class="column"><img src="image/nightwing-infinite-tome-1.jpg"
+            alt="couverture de livre" /></a>
+        <a href="produit.html" class="column"><img src="image/punisher-max-par-ennis-robertson-tome-1.jpg"
+            alt="couverture de livre" /></a>
+        <a href="produit.html" class="column"><img src="image/miracleman-omnibus.jpg" alt="couverture de livre" /></a>
+        <a href="produit.html" class="column"><img src="image/sandman-tome-1.jpg" alt="couverture de livre" /></a>
+      </div>
+      <a href="produits.html" class="button is-info is-pulled-right">Voir tous les produits >>>></a>
+    </section>
+    <section>
+      <h2 class="title ml-2 is-underlined mt-6">Qui Sommes nous ? :</h2>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo
+        expedita saepe cupiditate quo, ea assumenda omnis quaerat itaque non
+        natus ut doloremque tempore, nulla quibusdam asperiores nostrum
+        temporibus iure! Id?Lorem, ipsum dolor sit amet consectetur
+        adipisicing elit. Fuga, eius id animi nam perferendis veniam, harum
+        consequuntur ipsum quisquam rem saepe atque cupiditate accusamus amet
+        deserunt ex ipsam delectus reiciendis?Lorem ipsum dolor sit amet,
+        consectetur adipisicing elit. Totam quasi, aliquam expedita, mollitia,
+        impedit consequatur fuga eum sint debitis assumenda tempora et! Quos
+        molestias commodi id consequatur repellendus iusto. Pariatur.
+      </p>
+    </section>
+  </main>
+  <footer class="mt-4 mx-5 has-text-centered is-hidden-touch">
+    <div class="columns is-vcentered">
+      <p class="column is-one-fifth">Suivez nous sur :</p>
+      <a href="" class="column is-one-fifth"><img src="image/facebook.png" alt="" /></a>
+      <a href="" class="column is-one-fifth"><img src="image/twitter.png" alt="" /></a>
+      <a href="" class="column is-one-fifth"><img src="image/instagram.png" alt="" /></a>
+    </div>
+  </footer>
+  <script src="JS/script.js"></script>
+</body>
+
 </html>

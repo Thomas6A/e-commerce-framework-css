@@ -1,135 +1,116 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Inscription</title>
-    <link rel="stylesheet" href="node_modules/bulma/css/bulma.min.css" />
-  </head>
-  <body>
-    <header>
-      <nav
-        class="navbar is-fixed-top"
-        role="navigation"
-        aria-label="main navigation"
-      >
-        <div class="navbar-brand">
-          <a class="navbar-item" href="#">
-            <img src="image/bulles.png" />
-          </a>
 
-          <a
-            role="button"
-            class="navbar-burger"
-            aria-label="menu"
-            aria-expanded="false"
-            data-target="navbarBasicExample"
-          >
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-          </a>
-        </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Inscription</title>
+  <link rel="stylesheet" href="node_modules/bulma/css/bulma.min.css" />
+</head>
 
-        <div id="navbarBasicExample" class="navbar-menu">
-          <div class="navbar-start">
-            <a class="navbar-item" href="accueil.html"> Accueil </a>
+<body>
+  <header>
+    <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="#">
+          <img src="image/bulles.png" alt="logo du site" />
+        </a>
 
-            <a class="navbar-item" href="produits.html"> Produits </a>
+        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
 
-            <div class="navbar-item has-dropdown is-hoverable">
-              <a class="navbar-link"> Plus </a>
+      <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-start">
+          <a class="navbar-item" href="accueil.html"> Accueil </a>
 
-              <div class="navbar-dropdown">
-                <a class="navbar-item"> Panier </a>
-              </div>
-            </div>
-          </div>
+          <a class="navbar-item" href="produits.html"> Produits </a>
 
-          <div class="navbar-end">
-            <div class="navbar-item">
-              <div class="buttons">
-                <a class="button is-info">
-                  <strong>Inscription</strong>
-                </a>
-                <a class="button is-light" href="connexion.html"> Connexion </a>
-              </div>
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link"> Plus </a>
+
+            <div class="navbar-dropdown">
+              <a class="navbar-item" href="panier.html"> Panier </a>
+              <a class="navbar-item" href="Compte.html"> Mon Compte</a>
             </div>
           </div>
         </div>
-      </nav>
-    </header>
-    <div class="is-transparent">////</div>
-    <main class="mt-6 mx-5">
-      <form>
-        <div class="field">
-          <label class="label">Nom :</label>
-          <div class="control has-icons-left has-icons-right">
-            <input class="input" type="text" placeholder="Nom" />
+
+        <div class="navbar-end">
+          <div class="navbar-item">
+            <div class="buttons">
+              <a class="button is-info" href="inscription.html">
+                <strong>Inscription</strong>
+              </a>
+              <a class="button is-light" href="connexion.html"> Connexion </a>
+            </div>
           </div>
         </div>
-
-        <div class="field">
-          <label class="label">Nom d'utilisateur :</label>
-          <div class="control has-icons-left has-icons-right">
-            <input
-              class="input"
-              type="text"
-              placeholder="Nom d'utilisateur"
-            />
-          </div>
+      </div>
+    </nav>
+  </header>
+  <div class="is-transparent">////</div>
+  <main class="mt-6 mx-5">
+    <form>
+      <div class="field">
+        <label class="label">Nom :</label>
+        <div class="control has-icons-left has-icons-right">
+          <input class="input" type="text" placeholder="Nom" />
         </div>
+      </div>
 
-        <div class="field">
-          <label class="label">Email</label>
-          <div class="control has-icons-left has-icons-right">
-            <input
-              class="input"
-              type="email"
-              placeholder="Email"
-            />
+      <div class="field">
+        <label class="label">Nom d'utilisateur :</label>
+        <div class="control has-icons-left has-icons-right">
+          <input class="input" type="text" placeholder="Nom d'utilisateur" />
         </div>
+      </div>
 
-        <div class="field mt-2">
-            <label class="label">Mot de passe :</label>
-            <div class="control has-icons-left has-icons-right">
-              <input
-                class="input"
-                type="password"
-                placeholder="Mot de passe"
-              />
-          </div>
-
-          <div class="field mt-2">
-            <label class="label">Confirmation du mot de passe :</label>
-            <div class="control has-icons-left has-icons-right">
-              <input
-                class="input"
-                type="password"
-                placeholder="Mot de passe"
-              />
-          </div>
-
-        <div class="field mt-2">
-          <div class="control">
-            <label class="checkbox">
-              <input type="checkbox" />
-              J'accepte les <a href="#">conditions d'utilisations</a>
-            </label>
-          </div>
+      <div class="field">
+        <label class="label">Email</label>
+        <div class="control has-icons-left has-icons-right">
+          <input class="input" type="email" placeholder="Email" />
         </div>
+      </div>
 
-        <div class="field is-grouped mt-2">
-          <div class="control">
-            <button class="button is-info">S'inscrire</button>
-          </div>
-          <div class="control">
-            <button class="button is-info is-light">Annuler</button>
-          </div>
+      <div class="field mt-2">
+        <label class="label">Mot de passe :</label>
+        <div class="control has-icons-left has-icons-right">
+          <input class="input" type="password" placeholder="Mot de passe" />
         </div>
-      </form>
-    </main>
-    <script src="JS/script.js"></script>
-  </body>
+      </div>
+
+      <div class="field mt-2">
+        <label class="label">Confirmation du mot de passe :</label>
+        <div class="control has-icons-left has-icons-right">
+          <input class="input" type="password" placeholder="Mot de passe" />
+        </div>
+      </div>
+
+      <div class="field mt-2">
+        <div class="control">
+          <label class="checkbox">
+            <input type="checkbox" />
+            J'accepte les <a href="#">conditions d'utilisations</a>
+          </label>
+        </div>
+      </div>
+
+      <div class="field is-grouped mt-2">
+        <div class="control">
+          <button class="button is-info">S'inscrire</button>
+        </div>
+        <div class="control">
+          <button class="button is-info is-light">Annuler</button>
+        </div>
+      </div>
+    </form>
+  </main>
+  <script src="JS/script.js"></script>
+</body>
+
 </html>
