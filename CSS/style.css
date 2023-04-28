@@ -1,0 +1,8 @@
+td img{
+    width: 10%;
+}
+@media screen and (max-width : 740px) {
+    td img{
+        width: 100%;
+    }
+}
