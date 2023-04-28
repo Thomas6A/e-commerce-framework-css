@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Connexion</title>
+    <title>Panier</title>
     <link rel="stylesheet" href="node_modules/bulma/css/bulma.min.css">
 </head>
 <body>
@@ -36,7 +36,7 @@
             <div class="navbar-start">
               <a class="navbar-item" href="accueil.html"> Accueil </a>
   
-              <a class="navbar-item" href="produits.html"> Produits </a>
+              <a class="navbar-item" href="#"> Produits </a>
   
               <div class="navbar-item has-dropdown is-hoverable">
                 <a class="navbar-link"> Plus </a>
@@ -50,7 +50,7 @@
             <div class="navbar-end">
               <div class="navbar-item">
                 <div class="buttons">
-                  <a class="button is-info">
+                  <a class="button is-info" href="inscription.html">
                     <strong>Inscription</strong>
                   </a>
                   <a class="button is-light"> Connexion </a>
@@ -60,52 +60,40 @@
           </div>
         </nav>
       </header>
-
       <div class="is-transparent">////</div>
-    <main class="mt-6 mx-5">
-      <form>
-
-        <div class="field">
-          <label class="label">Nom d'utilisateur :</label>
-          <div class="control has-icons-left has-icons-right">
-            <input
-              class="input"
-              type="text"
-              placeholder="Nom d'utilisateur"
-            />
+      <main class="mt-6 mx-5">
+        <h2 class="title ml-2 is-underlined mt-5">Panier : </h2>
+        <table class="table container is-fluid">
+            <thead>
+                <tr>
+                    <th>Produits</th>
+                    <th>Titre</th>
+                    <th>Quantité</th>
+                    <th>Prix</th>
+                </tr>
+            </thead>
+            <tbody>
+                <td><img src="image/nightwing-infinite-tome-1.jpg" alt="" style="width: 20%;"></td>
+                <td>Nightwing Infinite tome 1</td>
+                <td>1</td>
+                <td>21€</td>
+            </tbody>
+            <tfoot>
+                <th>Total :</th>
+                <th></th>
+                <th></th>
+                <th>21€</th>
+            </tfoot>
+        </table>
+        <div class="field is-grouped mt-2 has-text-centered">
+            <div class="control">
+              <button class="button is-link">Payer</button>
+            </div>
+            <div class="control">
+              <button class="button is-link is-light">Annuler</button>
+            </div>
           </div>
-        </div>
-
-        <div class="field mt-2">
-            <label class="label">Mot de passe :</label>
-            <div class="control has-icons-left has-icons-right">
-              <input
-                class="input"
-                type="password"
-                placeholder="Mot de passe"
-              />
-          </div>
-
-        <div class="field mt-2">
-          <div class="control">
-            <label class="checkbox">
-              <input type="checkbox" />
-              Rester connecté</a>
-            </label>
-          </div>
-        </div>
-
-        <div class="field is-grouped mt-2">
-          <div class="control">
-            <button class="button is-link">Se Connecter</button>
-          </div>
-          <div class="control">
-            <button class="button is-link is-light">Annuler</button>
-          </div>
-        </div>
-      </form>
-    </main>
-
+      </main>
       <footer class="mt-6 mx-5 has-text-centered">
         <div class="columns is-vcentered">
           <p class="column is-one-fifth">Suivez nous sur :</p>
@@ -121,6 +109,5 @@
         </div>
       </footer>
       <script src="JS/script.js"></script>
-    
 </body>
 </html>
