@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compte</title>
+    <link rel="stylesheet" href="node_modules/bulma/css/bulma.min.css">
+</head>
+<body>
+    <header>
+        <nav
+          class="navbar is-fixed-top"
+          role="navigation"
+          aria-label="main navigation"
+        >
+          <div class="navbar-brand">
+            <a class="navbar-item" href="#">
+              <img src="image/bulles.png" />
+            </a>
+  
+            <a
+              role="button"
+              class="navbar-burger"
+              aria-label="menu"
+              aria-expanded="false"
+              data-target="navbarBasicExample"
+            >
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+            </a>
+          </div>
+  
+          <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-start">
+              <a class="navbar-item" href="accueil.html"> Accueil </a>
+  
+              <a class="navbar-item" href="#"> Produits </a>
+  
+              <div class="navbar-item has-dropdown is-hoverable">
+                <a class="navbar-link"> Plus </a>
+  
+                <div class="navbar-dropdown">
+                  <a class="navbar-item"> Panier </a>
+                </div>
+              </div>
+            </div>
+  
+            <div class="navbar-end">
+              <div class="navbar-item">
+                <div class="buttons">
+                  <a class="button is-info" href="inscription.html">
+                    <strong>Inscription</strong>
+                  </a>
+                  <a class="button is-light"> Connexion </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <div class="is-transparent">////</div>
+      <main class="mt-6 mx-5">
+        <h2 class="title ml-2 is-underlined mt-5">Commande en cours : </h2>
+        <table class="table container is-fluid">
+            <thead>
+                <tr>
+                    <th>Produits</th>
+                    <th>Statut</th>
+                    <th>Date</th>
+                    <th>Prix Total</th>
+                </tr>
+            </thead>
+            <tbody>
+                <td><img src="image/house-of-x-powers-of-x-deluxe.jpg" alt="" style="width: 10%;"><img src="image/punisher-max-par-ennis-robertson-tome-1.jpg" alt="" style="width: 10%;"></td>
+                <td>Envoyé</td>
+                <td>21/04/2023</td>
+                <td>71€</td>
+            </tbody>
+        </table>
+        <h2 class="title ml-2 is-underlined mt-5">Historique de commandes : </h2>
+        <table class="table container is-fluid">
+            <thead>
+                <tr>
+                    <th>Produits</th>
+                    <th>Statut</th>
+                    <th>Date</th>
+                    <th>Prix Total</th>
+                </tr>
+            </thead>
+            <tbody>
+                <td><img src="image/batman-white-knight.jpg" alt="" style="width: 10%;"><img src="image/miracleman-omnibus.jpg" alt="" style="width: 10%;"></td>
+                <td>Reçu</td>
+                <td>15/03/2023</td>
+                <td>92€</td>
+            </tbody>
+            <tbody>
+                <td><img src="image/nightwing-infinite-tome-1.jpg" alt="" style="width: 10%;"></td>
+                <td>Reçu</td>
+                <td>08/01/2023</td>
+                <td>21€</td>
+            </tbody>
+        </table>
+      </main>
+      <footer class="mt-6 mx-5 has-text-centered">
+        <div class="columns is-vcentered">
+          <p class="column is-one-fifth">Suivez nous sur :</p>
+          <a href="" class="column is-one-fifth"
+            ><img src="image/facebook.png" alt=""
+          /></a>
+          <a href="" class="column is-one-fifth"
+            ><img src="image/twitter.png" alt=""
+          /></a>
+          <a href="" class="column is-one-fifth"
+            ><img src="image/instagram.png" alt=""
+          /></a>
+        </div>
+      </footer>
+      <script src="JS/script.js"></script>
+</body>
+</html>
